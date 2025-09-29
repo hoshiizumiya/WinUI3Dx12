@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Window
     x:Class="WinUI3Dx12.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -9,8 +9,9 @@
     mc:Ignorable="d"
     Title="WinUI3Dx12">
 
-    <Grid>
-        <SwapChainPanel>
+    <Grid Loaded="Grid_Loaded">
+        <SwapChainPanel
+            x:Name="MainWindowSwapChainPanel">
             
         </SwapChainPanel>
     </Grid>
