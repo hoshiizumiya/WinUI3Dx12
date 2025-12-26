@@ -2,7 +2,6 @@
   <Configurations>
     <Platform Name="ARM64" />
     <Platform Name="x64" />
-    <Platform Name="x86" />
   </Configurations>
   <Project Path="WinUI3Dx12/WinUI3Dx12.vcxproj" Id="38e1bd6e-592b-463b-84cf-5fd3905dc331">
     <Deploy />

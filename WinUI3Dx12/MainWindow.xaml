@@ -1,18 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Window
     x:Class="WinUI3Dx12.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:WinUI3Dx12"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:WinUI3Dx12"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Title="WinUI3Dx12">
+    Title="WinUI3Dx12"
+    mc:Ignorable="d">
 
     <Grid Loaded="Grid_Loaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
         <SwapChainPanel
-            x:Name="MainWindowSwapChainPanel">
-            
-        </SwapChainPanel>
+            x:Name="MainWindowSwapChainPanel"
+            Grid.Row="1"
+            HorizontalAlignment="Stretch" />
+        <TextBlock
+            Grid.Row="1"
+            Margin="10"
+            HorizontalAlignment="Center"
+            FontSize="24"
+            Text="Hello, WinUI 3 with DirectX 12!" />
     </Grid>
 </Window>
