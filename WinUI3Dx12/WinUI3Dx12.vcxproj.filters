@@ -62,4 +62,7 @@
     <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
     <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natstepfilter" />
   </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="HLSL\ComputeShader.hlsl" />
+  </ItemGroup>
 </Project>
