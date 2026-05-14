@@ -14,14 +14,12 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <SwapChainPanel
-            x:Name="MainWindowSwapChainPanel"
-            Grid.Row="1"
-            HorizontalAlignment="Stretch" />
+        <SwapChainPanel x:Name="MainWindowSwapChainPanel" Grid.Row="1" />
         <TextBlock
             Grid.Row="1"
             Margin="10"
             HorizontalAlignment="Center"
+            VerticalAlignment="Top"
             FontSize="24"
             Text="Hello, WinUI 3 with DirectX 12!" />
     </Grid>
